@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-
+    display: flex;
 }
 
 #side{
@@ -14,9 +14,27 @@ body{
 }
 
 #logo{
-    width: auto;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: black ;
     opacity: 0.5;
+    display: flex;
+}
+
+#logo img{
+    height:60%
+}
+
+@font-face {
+    font-family: "logo";
+    src: url(fonts/Norse-Bold.otf);
+}
+
+#logo h1{
+    font-family: logo,serif;
+    color: aliceblue;
+}
+
+.inputs{
     
 }
