@@ -1,31 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Gabarito&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Gabarito&family=Roboto:wght@100;400&family=Sofia+Sans+Condensed:wght@200&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     display: flex;
-    width: 100%;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F9FAFB;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-self: center;
+    padding-left: 30px;
 }
 
 #side{
-   background-image: url(images/background-image.jpg); 
-   
-   height: 1000px;
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   display: flex;
+    width: 40vw;
+    background-image: url(images/background-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
 }
 
 #logo{
-    width: 200px;
-    height: 200px;
+    width: 100%;
     background-color: black ;
     opacity: 0.5;
     display: flex;
     margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
 
 #logo img{
-    height:60%
+    height: 100px;
+
 }
 
 @font-face {
@@ -33,11 +50,74 @@ body{
     src: url(fonts/Norse-Bold.otf);
 }
 
-#logo h1{
+#logo p{
     font-family: logo,serif;
     color: aliceblue;
+    align-items: center;
+    font-size: 50px;
 }
 
-.inputs{
+fieldset{
+    margin: 0;
+    padding: 0;
     border: none;
+    padding: 0 30px 0 0;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.inputs > div{
+    display: flex;
+    flex-direction: row;
+}
+
+/* .sign-form{
+    background-color: #F9FAF8;
+    width: 100%;
+} */
+
+button{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #596D48;
+    border: none;
+    color: aliceblue;
+    width: 160px;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Gabarito', cursive;
+    font-family: 'Roboto', sans-serif;    
+}
+
+p, label{
+    font-weight: 800px;
+}
+
+label{
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Gabarito', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 15px;
+}
+
+h2{
+    font-family: 'AR One Sans', sans-serif;
+    display: block;
+}
+
+a{
+    color: #596D48;
+}
+
+input{
+    display: block;
 }
